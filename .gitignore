@@ -1,0 +1,10 @@
+#Editor files
+.idea
+
+# Libs
+node_modules
+
+# Built files
+dist
+
+pnpm-lock.yaml

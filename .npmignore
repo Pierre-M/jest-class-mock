@@ -1,0 +1,7 @@
+#Editor files
+.idea
+
+# Libs
+node_modules
+
+pnpm-lock

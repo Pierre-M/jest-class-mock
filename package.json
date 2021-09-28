@@ -1,0 +1,33 @@
+{
+  "name": "jest-class-mock",
+  "version": "1.0.1",
+  "description": "Easy mock creation with Jest for ES6 class/objects",
+  "repository": "https://github.com/Pierre-M/jest-class-mock",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint --fix . --ignore-path .gitignore .",
+    "format": "prettier --write . --ignore-path .gitignore ."
+  },
+  "author": "Pierre-M",
+  "license": "ISC",
+  "peerDependencies": {
+    "jest": "^27.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "typescript": "^4.4.3",
+    "@types/faker": "^5.5.8",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^1.1.5",
+    "faker": "^5.5.3",
+    "jest": "^27.2.2",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.5"
+  }
+}
