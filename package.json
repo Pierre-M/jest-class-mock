@@ -1,6 +1,6 @@
 {
   "name": "jest-class-mock",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Easy mock creation with Jest for ES6 class/objects",
   "repository": "https://github.com/Pierre-M/jest-class-mock",
   "main": "dist/index.js",

@@ -7,11 +7,14 @@ export type MockedSubject<T> = {
 }
 
 export const createMock = <T>(subject: Subject<T>): MockedSubject<T> => {
-  return Object.keys(subject.prototype).reduce((mockedSubject, key) => {
-    if (key === "constructor") return mockedSubject
+  return Object.getOwnPropertyNames(subject.prototype).reduce(
+    (mockedSubject, key) => {
+      if (key === "constructor") return mockedSubject
 
-    mockedSubject[key as keyof T] = jest.fn()
+      mockedSubject[key as keyof T] = jest.fn()
 
-    return mockedSubject
-  }, {} as MockedSubject<T>)
+      return mockedSubject
+    },
+    {} as MockedSubject<T>
+  )
 }
